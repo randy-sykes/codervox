@@ -1,0 +1,42 @@
+body {
+    background-color: #E0E0E0;
+}
+
+div {
+    border-radius: 5%;
+    text-align: center;
+    background: #66d9e8;
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 50px
+}
+
+button {
+    font-family: 'Acme', sans-serif;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 40px;
+    font-size: 24px;
+    background-color: #0D47A1;
+}
+
+i {
+    padding-right: 10px;
+}
+
+.fa-mug-saucer {
+    color: #FF9800;
+}
+
+.fa-check {
+    color: #FFEB3B;
+}
+
+.fa-trash-can {
+    color: #76FF03;
+}
