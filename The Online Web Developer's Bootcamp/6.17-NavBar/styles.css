@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #37474F;
+}
+
+li {
+    float: left;
+    color: #37474F;
+}
+
+li a {
+    font-family: 'Francois One', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    /* padding: 24px 100px; */
+    padding: 25px 112px;
+    text-decoration: none;
+    font-size: 24px;
+    border-right: 1px solid white; /* I did 2px instead of 1 */
+}
+
+
+li a:hover:not(.logo) {
+    background-color: #263238;
+}
+
+.fa-building {
+    color: #FFEB3B;
+}
+
+.logo {
+    background-color: #01579B;
+}
