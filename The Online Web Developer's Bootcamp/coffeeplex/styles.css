@@ -68,5 +68,18 @@ html, body {
 .section {
     padding: 112px 0;
     overflow: hidden;
-    
+}
+
+.middle {
+    background: #262F36;
+    color: white;
+}
+
+.middle h2 {
+    color: #CFD8DC;
+}
+
+div img {
+    max-width: 150%;
+    height: auto;
 }
