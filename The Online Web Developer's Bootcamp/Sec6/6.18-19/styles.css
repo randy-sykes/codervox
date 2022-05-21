@@ -1,0 +1,50 @@
+body {
+    font-size: 24px;
+}
+
+/* 6.18 */
+/* h1, h4 {
+    color: orange;
+} */
+
+/* p span {
+    color: green;
+    border: solid 1px grey;
+} */
+
+/* div + h4 {
+    color: purple;
+    border: solid 1px brown;
+} */
+
+/* div > p {
+    color: red;
+    border: solid 1px brown;
+} */
+
+/* input[type="text"] {
+    color: green;
+    background: orange;
+} */
+
+/* 6.19 */
+/* a:active {
+    color: pink;
+} */
+
+/* input:focus {
+    background: red;
+    color: green;
+} */
+
+/* li:first-child {
+    color: orange;
+} */
+
+/* li:last-child {
+    color: orange;
+} */
+
+/* li:nth-child(2) {
+    border: solid 1px black;
+} */
