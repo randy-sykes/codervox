@@ -22,6 +22,16 @@ html, body {
 
 }
 
+#background3 {
+    background: url('img/backgrounds/background3.jpg') center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
 #message {
     width: 900px;
     margin: 0 auto;
@@ -64,7 +74,7 @@ html, body {
     color: #fd7e14
 }
 
-/*About page */
+/* About page */
 .section {
     padding: 112px 0;
     overflow: hidden;
@@ -83,3 +93,6 @@ div img {
     max-width: 150%;
     height: auto;
 }
+
+
+/* Contact page */
