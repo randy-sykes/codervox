@@ -1,4 +1,4 @@
-var originalText = document.getElementById("coloredBox").textContent;
+var originalText = document.querySelector("div").textContent;
 var originalColor = '#808080';
 var generatedColor = '#808080';
 var seenColors = ['#808080',];
@@ -18,18 +18,18 @@ function generateRandomColor() {
     return "#" + ((1<<24)*Math.random() | 0).toString(16)
 }
 
-document.getElementById("coloredBox").addEventListener("click", function(){
-    var rgb = window.getComputedStyle(document.getElementById("coloredBox")).backgroundColor;
+document.querySelector("div").addEventListener("click", function(){
+    var rgb = window.getComputedStyle(document.querySelector("div")).backgroundColor;
     var hexValue = '#' + rgb.substr(4, rgb.indexOf(')') - 4).split(',').map((color) => String("0" + parseInt(color).toString(16)).slice(-2)).join('');
     generatedColor = generateRandomColor();
     while (generatedColor === originalColor) {
         generatedColor = generateRandomColor();
     }
-    document.getElementById("coloredBox").style.backgroundColor = generatedColor;
+    document.querySelector("div").style.backgroundColor = generatedColor;
     if (seenColors.includes(generatedColor)) {
-        document.getElementById("coloredBox").textContent = "You have also seen this.";
+        document.querySelector("div").textContent = "You have also seen this.";
     } else {
         seenColors.push(generatedColor);
-        document.getElementById("coloredBox").textContent = "But you have not seen this.";
+        document.querySelector("div").textContent = "But you have not seen this.";
     }
 })
