@@ -1,0 +1,9 @@
+
+#coloredBox {
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    border: 3px black solid;
+    margin: auto;
+    font-size: 30px;
+}
