@@ -1,19 +1,21 @@
-const messageCounter = 10
-updateMessage(messageCounter)
+const maxLength = 10
+const warningLength = 3
+updateMessage(maxLength)
 
 function updateMessage(currentCount){
-    document.getElementById("counter").textContent = currentCount + " characters left";
+    document.getElementById("theMessage").textContent = currentCount + " characters left";
 }
 
-document.querySelector("textarea").addEventListener("keyup", function(){
-    var messageLength = document.querySelector("textarea").value.length;
+document.getElementById("userMessage").addEventListener("keyup", function(){
+    var messageLength = document.getElementById("userMessage").value.length;
+    var counter = (maxLength - messageLength);
 
-    if (messageCounter - messageLength < 4){
-        // 3 Chars down turns to red
-        document.getElementById("counter").style.color = 'red';
+    if (counter <= warningLength){
+        // 3 Chars or less turns to red
+        document.getElementById("theMessage").style.color = 'red';
     } else {
         // All others are black
-        document.getElementById("counter").style.color = 'black';
+        document.getElementById("theMessage").style.color = 'black';
     }
-    updateMessage(messageCounter - messageLength);
+    updateMessage(maxLength - messageLength);
 })
